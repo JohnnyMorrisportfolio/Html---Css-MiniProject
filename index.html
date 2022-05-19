@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section>
         <nav>
-            <img src="./assets/FES.svg" alt="">
+            <img src="./assets/FES.svg" class="logo" alt="">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#discord">Projects</a></li>
@@ -17,67 +18,82 @@
             </ul>
         </nav>
         <header>
-            <div>
+            <div class="row">
+                <div>
                 <h1>Best Place to Learn Frontend </h1>
-                <p>Go from being an absolute beginner to a pro with a simplified process</p>
+                <p class="subheader">Go from being an absolute beginner to a pro with a simplified process</p>
                 <button>Start Now</button>
-            </div>
-            <figure>
+                </div>
+                <figure class="about__img--wrapper">
                 <img src="assets/laptop.png" alt="This image is of a computer monitor">
-            </figure>
+                </figure>
+            </div>
         </header>
     </section>
     <main>
-        <Section id="about"></Section>
-        <h2>About</h2>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minus autem, pariatur error aut nostrum quasi architecto officiis nihil accusamus, dolorem nobis soluta, veritatis dolore! Labore quo sed harum pariatur.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, laudantium laboriosam culpa incidunt corporis atque repudiandae dicta magni et provident distinctio adipisci tempora reiciendis. Quibusdam voluptatem alias molestias dignissimos tempore!</p>
-        </div>
-        <figure>
-            <img src="assets/about.jpg" alt="this image is of hands typing on a screen">
-        </figure>
-
-
-        <Section id="discord"></Section>
-        <h2>Discord</h2>
-        <figure>
-            <img src="assets/discord.png" alt="This image is of the logo for Discord">
-            <div>
-                <p>
-                    Join the discord if you want help with your programming journey
-                </p>
-                
-                <p>There are over 2,000 people in the server talking abount Frontend and helping each other with code.
-
-                </p>
-                <p>
-                    It's absolutely free to <button src="https://discord.gg/Pnh2Sm6K">Join!!!</button>
-                </p>
+        <Section id="about">
+            <h2>About</h2>
+            <div class="row">
+                <div class="section__description">
+                    <div class="section__description--wrapper">
+                        <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minus autem, pariatur error aut nostrum quasi architecto officiis nihil accusamus, dolorem nobis soluta, veritatis dolore! Labore quo sed harum pariatur.</p>
+                        <p class="section__description--para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, laudantium laboriosam culpa incidunt corporis atque repudiandae dicta magni et provident distinctio adipisci tempora reiciendis. Quibusdam voluptatem alias molestias dignissimos tempore!</p>
+                    </div>
+                </div>
             </div>
+            <figure class="about__img--wrapper">
+                <img src="assets/about.jpg" alt="this image is of hands typing on a screen">
+            </figure>
+        </Section>
 
-        </figure>
+
+        <Section id="discord">
+            <h2>Discord</h2>
+            <div class="row">
+                <div class="section__description">
+                    <div class="section__description--wrapper">
+                        <figure class="about__img--wrapper">
+                        <img src="assets/discord.png" alt="This image is of the logo for Discord">
+                        </figure>
+                        <p class="section__description--para">
+                        Join the discord if you want help with your programming journey
+                        </p>
+                    
+                        <p class="section__description--para">There are over 2,000 people in the server talking abount Frontend and helping each other with code.
+                        </p>
+                        <p class="section__description--para">
+                        It's absolutely free to <button src="https://discord.gg/Pnh2Sm6K">Join!!!</button>
+                        </p>
+                    
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </Section>
         
-        <Section id="contact"></Section>
-        <h2>Contact</h2>
-        <form action="">
-            <label>Email</label>
-            <input type="text" placeholder="YourEmailHere@Example.com">
-            <label>Message</label>
-            <textarea type="text" placeholder="Type your message here"></textarea>
-            <button>Submit</button>
-        </form>
+        <Section id="contact">
+            <h2>Contact</h2>
+            <form action="">
+                <label>Email</label>
+                <input type="email" placeholder="YourEmailHere@Example.com">
+                <label>Message</label>
+                <textarea type="text" placeholder="Type your message here"></textarea>
+                <button>Contact Us</button>
+            </form>
+        </Section>
     </main>
-<footer>
-    <img src="assets/FES.svg" alt="External links to outside sources">
-    <div>
-        <a href="#about">About</a>
-        <a href="#discord">Projects</a>
-        <a href="#contact">Contacts</a>
-        <a href="">Courses</a>
-    </div>
-    <p>Copyright Front end simplified &copy; 2022 Johnny Morris Html Portfolio Project Johnnymorrisportfolio@gmail.com</p>
-</footer>
+    <Section id="footer">
+        <footer>
+            <img class="footer__logo" src="assets/FES.svg" alt="External links to outside sources">
+            <div class="footer__links">
+                <a class="footer__link" href="#about">About</a>
+                <a class="footer__link" href="#discord">Projects</a>
+                <a class="footer__link" href="#contact">Contacts</a>
+                <a class="footer__link" href="">Courses</a>
+            </div>
+            <p>Copyright Front end simplified &copy; 2022 Johnny Morris Html Portfolio Project Johnnymorrisportfolio@gmail.com</p>
+        </footer>
+    </Section>
     
 </body>
 </html>
